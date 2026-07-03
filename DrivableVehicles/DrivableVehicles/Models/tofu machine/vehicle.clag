@@ -1,0 +1,20 @@
+# DrivableVehicles per-vehicle config
+# Arcade/gameplay tuning for the CastleForge prototype; speed values are game units, not real MPH.
+# Profile: Light drift car; high rotation and lively acceleration.
+# Source signal from original Unity prefab: engineForce=3050, stability=0.25, driftMultiplier=1.43.
+
+[Vehicle]
+MaxForwardSpeed=18
+MaxReverseSpeed=-7
+Acceleration=18.8
+BrakeStrength=11.5
+Drag=3.05
+SteerRate=2.95
+
+[Sounds]
+Enabled=true
+Volume=0.74
+Enter=sounds\unlock.wav
+Accelerate=sounds\accel_nico.wav
+Decelerate=sounds\deaccelerate.wav
+Skid=sounds\tire_skidding.wav

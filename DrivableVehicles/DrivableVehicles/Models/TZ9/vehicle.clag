@@ -1,0 +1,20 @@
+# DrivableVehicles per-vehicle config
+# Arcade/gameplay tuning for the CastleForge prototype; speed values are game units, not real MPH.
+# Profile: High-power drift coupe; fastest and most eager to rotate.
+# Source signal from original Unity prefab: engineForce=3150, stability=0.1, driftMultiplier=1.3.
+
+[Vehicle]
+MaxForwardSpeed=19.5
+MaxReverseSpeed=-7.5
+Acceleration=20.5
+BrakeStrength=11.8
+Drag=2.95
+SteerRate=3.05
+
+[Sounds]
+Enabled=true
+Volume=0.78
+Enter=sounds\unlock.wav
+Accelerate=sounds\accel_rx7.wav
+Decelerate=sounds\deaccelerate.wav
+Skid=sounds\tire_skidding.wav

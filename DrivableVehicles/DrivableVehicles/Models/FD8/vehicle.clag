@@ -1,0 +1,20 @@
+# DrivableVehicles per-vehicle config
+# Arcade/gameplay tuning for the CastleForge prototype; speed values are game units, not real MPH.
+# Profile: Sport compact; balanced fast road car with strong braking.
+# Source signal from original Unity prefab: engineForce=3030, stability=0.7, driftMultiplier=1.4.
+
+[Vehicle]
+MaxForwardSpeed=18.5
+MaxReverseSpeed=-7
+Acceleration=19
+BrakeStrength=12
+Drag=3.1
+SteerRate=2.6
+
+[Sounds]
+Enabled=true
+Volume=0.76
+Enter=sounds\unlock.wav
+Accelerate=sounds\accel_db8.wav
+Decelerate=sounds\deaccelerate.wav
+Skid=sounds\tire_skidding.wav

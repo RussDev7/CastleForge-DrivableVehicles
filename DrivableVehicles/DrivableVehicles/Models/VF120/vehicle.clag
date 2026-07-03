@@ -1,0 +1,20 @@
+# DrivableVehicles per-vehicle config
+# Arcade/gameplay tuning for the CastleForge prototype; speed values are game units, not real MPH.
+# Profile: Light sporty hatch/coupe; quick, nimble, slightly calmer than TZ9/V47.
+# Source signal from original Unity prefab: engineForce=3000, stability=0.6, driftMultiplier=1.33.
+
+[Vehicle]
+MaxForwardSpeed=18.2
+MaxReverseSpeed=-7
+Acceleration=19
+BrakeStrength=11.3
+Drag=3.08
+SteerRate=2.55
+
+[Sounds]
+Enabled=true
+Volume=0.76
+Enter=sounds\unlock.wav
+Accelerate=sounds\accel_180xs.wav
+Decelerate=sounds\deaccelerate.wav
+Skid=sounds\tire_skidding.wav

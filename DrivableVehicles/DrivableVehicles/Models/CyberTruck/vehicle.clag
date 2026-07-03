@@ -1,0 +1,20 @@
+# DrivableVehicles per-vehicle config
+# Arcade/gameplay tuning for the CastleForge prototype; speed values are game units, not real MPH.
+# Profile: Heavy electric truck; stable, torquey, slower to rotate.
+# Source signal from original Unity prefab: engineForce=2800, stability=1.0, driftMultiplier=1.2.
+
+[Vehicle]
+MaxForwardSpeed=16
+MaxReverseSpeed=-6
+Acceleration=16
+BrakeStrength=9.5
+Drag=4.2
+SteerRate=2.05
+
+[Sounds]
+Enabled=true
+Volume=0.82
+Enter=sounds\unlock.wav
+Accelerate=sounds\accel_cybertruck.wav
+Decelerate=sounds\deaccelerate.wav
+Skid=sounds\tire_skidding.wav
