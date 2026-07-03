@@ -6,6 +6,7 @@ DrivableVehicles is a vehicle mod that supports selectable XNB vehicle models, p
 
 > **Status:** Prototype / local-only.  
 > This mod currently focuses on getting vehicles spawned, selected, rendered, and driven locally. Crafting, save/load persistence, proper block collision, and multiplayer sync are not implemented yet.
+> **Texture note:** The included example vehicle XNBs are currently model-only and do not have finished textures yet. They are included as working examples for testing model loading, controls, sounds, and per-vehicle configs.
 
 ![Preview](DrivableVehicles/_Images/Preview.png)
 
@@ -13,6 +14,34 @@ DrivableVehicles is a vehicle mod that supports selectable XNB vehicle models, p
   <img src="DrivableVehicles/_Images/In-game-driving-preview1.gif" alt="In-game driving preview 1" width="45%">
   <img src="DrivableVehicles/_Images/In-game-driving-preview2.gif" alt="In-game driving preview 2" width="45%">
 </p>
+
+---
+
+## Contents
+
+- [Version 0.1.20 concise command summaries](#version-0120-concise-command-summaries)
+- [Install layout](#install-layout)
+- [Vehicle model conversion](#vehicle-model-conversion)
+  - [Export from Unity](#1-export-from-unity)
+  - [Clean in Blender](#2-clean-in-blender)
+  - [Convert FBX to XNB](#3-convert-fbx-to-xnb)
+  - [Place converted files](#4-place-converted-files)
+  - [Select in game](#5-select-in-game)
+- [Commands](#commands)
+- [Driving controls](#driving-controls)
+- [Master config](#master-config)
+  - [Optional feedback](#optional-feedback)
+- [Per-vehicle config](#per-vehicle-config)
+- [Sound behavior](#sound-behavior)
+- [Model tuning](#model-tuning)
+  - [Scale](#scale)
+  - [Yaw offset](#yaw-offset)
+  - [Z offset](#z-offset)
+  - [Wheel clone workaround](#wheel-clone-workaround)
+- [Alpha Prototype model](#alpha-prototype-model)
+- [Troubleshooting](#troubleshooting)
+- [Development notes](#development-notes)
+- [Credits / license](#credits--license)
 
 ---
 
@@ -105,6 +134,8 @@ If the converter creates sidecar texture XNBs, keep them beside the main model X
 ## Vehicle model conversion
 
 CastleMiner Z uses XNA `.xnb` content. Unity prefabs, Unity `.asset` mesh files, Blender files, and FBX files cannot be loaded directly by the game.
+
+> **Texture status:** The bundled example XNBs do not currently include finished textures. If your conversion outputs texture dependency `.xnb` files, keep them beside the main model `.xnb` in the same `models` folder.
 
 Recommended conversion flow:
 
