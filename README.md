@@ -6,6 +6,7 @@ DrivableVehicles is a vehicle mod that supports selectable XNB vehicle models, p
 
 > **Status:** Prototype / local-only.  
 > This mod currently focuses on getting vehicles spawned, selected, rendered, and driven locally. Crafting, save/load persistence, proper block collision, and multiplayer sync are not implemented yet.
+
 > **Texture note:** The included example vehicle XNBs are currently model-only and do not have finished textures yet. They are included as working examples for testing model loading, controls, sounds, and per-vehicle configs.
 
 ![Preview](DrivableVehicles/_Images/Preview.png)
